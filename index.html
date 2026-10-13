@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050a1c" />
+  <meta name="description" content="Screenshot Sorting Pro – eine moderne Android-App zum Erkennen, Analysieren und übersichtlichen Sortieren von Screenshots." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Screenshot Sorting Pro – Mehr Ordnung. Weniger Chaos." />
+  <meta property="og:description" content="Erkennen, analysieren und sortieren: Entdecke die smarte Screenshot-Verwaltung für Android." />
+  <meta property="og:image" content="assets/branding/Google_Play_Feature_Graphic_BLUE_1024x500.png" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Screenshot Sorting Pro – Automatisch sortieren</title>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 18v3h14v-3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5.5-3.8 8.4-9 10-5.2-1.6-9-4.5-9-10V6l9-4Z"/><path d="m8.5 12 2.2 2.3L15.7 9"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2Z"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10H3V7Z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="9" r="1.5"/><path d="m21 17-5-5-5 6-3-3-5 5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></symbol>
+  </svg>
+
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Screenshot Sorting Pro – Start">
+        <img src="assets/img/app-icon.webp" width="42" height="42" alt="Screenshot Sorting Pro App-Icon" />
+        <span>Screenshot <strong>Sorting <em>Pro</em></strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#how" data-i18n="navHow">So funktioniert's</a>
+        <a href="#screenshots" data-i18n="navScreens">Screenshots</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="language-toggle" role="group" aria-label="Language / Sprache">
+          <button class="lang-btn active" type="button" data-lang="de" aria-pressed="true">DE</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-small btn-primary nav-cta" href="#screenshots"><svg class="ic"><use href="#i-arrow-up-right"/></svg><span data-i18n="navDiscover">App entdecken</span></a>
+        <button id="menuButton" class="menu-btn" aria-label="Menü öffnen" aria-controls="mobileNav" aria-expanded="false" type="button"><svg class="ic"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
+      <a href="#features" data-i18n="navFeatures">Features</a><a href="#how" data-i18n="navHow">So funktioniert's</a><a href="#screenshots" data-i18n="navScreens">Screenshots</a><a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="heroTitle">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">DEIN DIGITALER ORDNUNGSHELFER FÜR ANDROID</span></div>
+        <h1 id="heroTitle" data-i18n-html="heroTitle">Mehr Ordnung.<br><span class="gradient-text">Weniger Chaos.</span></h1>
+        <p class="hero-lead" data-i18n="heroLead">Hunderte Screenshots, aber nichts wiederzufinden? Screenshot Sorting Pro erkennt typische App-Ansichten und hilft dir, Bilder automatisch in übersichtliche Kategorien einzuordnen.</p>
+        <div class="hero-actions">
+          <a id="primaryCTA" class="btn btn-primary btn-large" href="#screenshots"><svg class="ic"><use href="#i-sparkle"/></svg><span data-i18n="heroExplore">App entdecken</span><svg class="ic end-arrow"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-glass btn-large" href="#how"><svg class="ic"><use href="#i-eye"/></svg><span data-i18n="heroHow">So funktioniert's</span></a>
+        </div>
+        <div class="hero-trust">
+          <span><svg class="ic"><use href="#i-shield"/></svg><span data-i18n="trustLocal">Lokale Verarbeitung</span></span>
+          <span><svg class="ic"><use href="#i-bolt"/></svg><span data-i18n="trustFast">Smarte Erkennung</span></span>
+          <span><svg class="ic"><use href="#i-phone"/></svg><span data-i18n="trustAndroid">Für Android</span></span>
+        </div>
+        <p class="build-note" data-i18n="visualNote">Designvorschau: Die gezeigten Oberflächen sind Illustrationen und können vom aktuellen App-Stand abweichen.</p>
+      </div>
+      <div class="hero-art reveal" aria-label="Gestaltungsvorschau von Screenshot Sorting Pro">
+        <div class="hero-halo"></div>
+        <div class="floating-icon floating-a"><svg class="ic"><use href="#i-folder"/></svg></div>
+        <div class="floating-icon floating-b"><svg class="ic"><use href="#i-image"/></svg></div>
+        <div class="floating-icon floating-c"><svg class="ic"><use href="#i-sparkle"/></svg></div>
+        <div class="hero-screen-wrap"><img class="hero-poster" src="assets/img/screenshot-dashboard.webp" width="941" height="1672" alt="Screenshot Sorting Pro – Dashboard mit Scan-Statistiken und Kategorien" fetchpriority="high" /></div>
+        <div class="float-pill float-pill-top"><svg class="ic"><use href="#i-sparkle"/></svg><span data-i18n="floatingIntelligent">Intelligent analysieren</span></div>
+        <div class="float-pill float-pill-bottom"><svg class="ic"><use href="#i-check"/></svg><span data-i18n="floatingOrganized">Übersichtlich sortieren</span></div>
+      </div>
+    </section>
+
+    <div class="container section-spacer"><div class="trust-bar"><span><svg class="ic"><use href="#i-shield"/></svg><span data-i18n="stripLocal">Privatsphäre im Fokus</span></span><span class="separator"></span><span><svg class="ic"><use href="#i-search"/></svg><span data-i18n="stripDetect">App-basierte Erkennung</span></span><span class="separator"></span><span><svg class="ic"><use href="#i-folder"/></svg><span data-i18n="stripFolders">Klare Ordnerstruktur</span></span><span class="separator"></span><span><svg class="ic"><use href="#i-sliders"/></svg><span data-i18n="stripOptions">Flexible Optionen</span></span></div></div>
+
+    <section id="features" class="section container" aria-labelledby="featuresTitle">
+      <div class="section-heading reveal"><span class="section-kicker" data-i18n="featuresKicker">DIE FEATURES</span><h2 id="featuresTitle" data-i18n-html="featuresTitle">Alles im Griff. <span class="gradient-text">Ganz automatisch.</span></h2><p data-i18n="featuresIntro">Vom ersten Scan bis zum fertigen Ordner: Eine durchdachte Arbeitsfläche für deine Screenshot-Sammlung.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-card-wide reveal"><div class="feature-top"><div class="icon-square blue"><svg class="ic"><use href="#i-search"/></svg></div><span class="feature-number">01 / ANALYSE</span></div><h3 data-i18n="f1Title">Apps intelligent erkennen</h3><p data-i18n="f1Text">Farbprofile und charakteristische Elemente helfen dabei, Screenshots aus WhatsApp, Facebook, Telegram und vielen weiteren Apps zuzuordnen.</p><div class="mini-categories"><span class="mini-tag"><i style="--c:#2bd9a3"></i>WhatsApp</span><span class="mini-tag"><i style="--c:#567aff"></i>Facebook</span><span class="mini-tag"><i style="--c:#25b8ee"></i>Telegram</span><span class="mini-tag"><i style="--c:#ac78ff"></i>Discord</span></div></article>
+        <article class="feature-card reveal"><div class="feature-top"><div class="icon-square cyan"><svg class="ic"><use href="#i-bolt"/></svg></div><span class="feature-number">02 / TEMPO</span></div><h3 data-i18n="f2Title">Schnell &amp; präzise</h3><p data-i18n="f2Text">Wähle zwischen schnellen Scans und detaillierterer Erkennung. Behalte den Fortschritt jederzeit im Blick.</p></article>
+        <article class="feature-card reveal"><div class="feature-top"><div class="icon-square violet"><svg class="ic"><use href="#i-folder"/></svg></div><span class="feature-number">03 / ORDNUNG</span></div><h3 data-i18n="f3Title">Saubere Kategorien</h3><p data-i18n="f3Text">Organisiere Bilder nach Apps, sieh dir Ergebnisse vorab an und behalte die Zielordner im Überblick.</p></article>
+        <article class="feature-card reveal"><div class="feature-top"><div class="icon-square teal"><svg class="ic"><use href="#i-shield"/></svg></div><span class="feature-number">04 / PRIVAT</span></div><h3 data-i18n="f4Title">Lokal statt Cloud</h3><p data-i18n="f4Text">Die Bildverarbeitung ist für die lokale Nutzung auf deinem Android-Gerät konzipiert – ohne erforderlichen Upload deiner Screenshots.</p></article>
+        <article class="feature-card reveal"><div class="feature-top"><div class="icon-square pink"><svg class="ic"><use href="#i-sliders"/></svg></div><span class="feature-number">05 / KONTROLLE</span></div><h3 data-i18n="f5Title">Dein Workflow</h3><p data-i18n="f5Text">Passe Scan-Modus, unterstützte Kategorien und Dateiaktionen an deine Bedürfnisse an.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="section how-section" aria-labelledby="howTitle"><div class="container"><div class="section-heading reveal"><span class="section-kicker" data-i18n="howKicker">SO EINFACH GEHT'S</span><h2 id="howTitle" data-i18n-html="howTitle">Drei Schritte. <span class="gradient-text">Mehr Überblick.</span></h2><p data-i18n="howIntro">Weniger Suchen, mehr Zeit für die wichtigen Dinge.</p></div>
+    <div class="steps">
+      <article class="step reveal"><div class="step-index">01</div><div class="step-icon"><svg class="ic"><use href="#i-folder"/></svg></div><h3 data-i18n="step1Title">Ordner wählen</h3><p data-i18n="step1Text">Wähle den Ordner mit deinen Screenshots über die Android-Dateiauswahl.</p></article>
+      <div class="step-connector" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></div>
+      <article class="step reveal"><div class="step-index">02</div><div class="step-icon"><svg class="ic"><use href="#i-sparkle"/></svg></div><h3 data-i18n="step2Title">Bilder analysieren</h3><p data-i18n="step2Text">Die Erkennung ordnet passende Screenshots ihren Kategorien zu und zeigt den Fortschritt.</p></article>
+      <div class="step-connector" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></div>
+      <article class="step reveal"><div class="step-index">03</div><div class="step-icon"><svg class="ic"><use href="#i-check"/></svg></div><h3 data-i18n="step3Title">Ordnung genießen</h3><p data-i18n="step3Text">Prüfe die Ergebnisse und lasse Dateien übersichtlich in Unterordner sortieren.</p></article>
+    </div></div></section>
+
+    <section id="screenshots" class="section container screenshot-section" aria-labelledby="screensTitle"><div class="section-heading reveal"><span class="section-kicker" data-i18n="screensKicker">EIN BLICK IN DIE APP</span><h2 id="screensTitle" data-i18n-html="screensTitle">Schön gestaltet. <span class="gradient-text">Einfach bedient.</span></h2><p data-i18n="screensIntro">Entdecke die Oberflächen der App – vom Dashboard bis zu den Einstellungen.</p></div>
+      <div class="gallery-toolbar"><p class="gallery-hint"><svg class="ic"><use href="#i-eye"/></svg><span data-i18n="galleryHint">Bild anklicken, um die Vorschau zu vergrößern.</span></p><div class="gallery-controls"><button class="circle-btn" id="galleryPrev" type="button" aria-label="Vorheriges Bild"><svg class="ic reverse"><use href="#i-arrow"/></svg></button><button class="circle-btn" id="galleryNext" type="button" aria-label="Nächstes Bild"><svg class="ic"><use href="#i-arrow"/></svg></button></div></div>
+      <div class="screenshot-track" id="screenshotTrack" tabindex="0" aria-label="App-Screenshots – horizontal scrollbar">
+        <button class="shot-card" type="button" data-shot="0"><div class="shot-cover"><img loading="lazy" src="assets/img/screenshot-dashboard.webp" width="941" height="1672" alt="Dashboard mit Ordnerauswahl und Kategoriestatistik"/><span class="shot-zoom"><svg class="ic"><use href="#i-eye"/></svg></span></div><strong data-i18n="shot1Title">Dashboard</strong><small data-i18n="shot1Text">Alles auf einen Blick</small></button>
+        <button class="shot-card" type="button" data-shot="1"><div class="shot-cover"><img loading="lazy" src="assets/img/screenshot-recognition.webp" width="941" height="1672" alt="Analyse-Modi und App-Erkennung"/><span class="shot-zoom"><svg class="ic"><use href="#i-eye"/></svg></span></div><strong data-i18n="shot2Title">App-Erkennung</strong><small data-i18n="shot2Text">Farben und Regeln</small></button>
+        <button class="shot-card" type="button" data-shot="2"><div class="shot-cover"><img loading="lazy" src="assets/img/screenshot-live.webp" width="941" height="1672" alt="Live-Scan mit Fortschrittsanzeige und Kategorien"/><span class="shot-zoom"><svg class="ic"><use href="#i-eye"/></svg></span></div><strong data-i18n="shot3Title">Live-Scan</strong><small data-i18n="shot3Text">Fortschritt verfolgen</small></button>
+        <button class="shot-card" type="button" data-shot="3"><div class="shot-cover"><img loading="lazy" src="assets/img/screenshot-results.webp" width="941" height="1672" alt="Sortierergebnisse mit Dateivorschau und Zielordnern"/><span class="shot-zoom"><svg class="ic"><use href="#i-eye"/></svg></span></div><strong data-i18n="shot4Title">Ergebnisse</strong><small data-i18n="shot4Text">Jede Datei im Blick</small></button>
+        <button class="shot-card" type="button" data-shot="4"><div class="shot-cover"><img loading="lazy" src="assets/img/screenshot-settings.webp" width="941" height="1672" alt="Anpassbare Erkennungs- und Sortiereinstellungen"/><span class="shot-zoom"><svg class="ic"><use href="#i-eye"/></svg></span></div><strong data-i18n="shot5Title">Einstellungen</strong><small data-i18n="shot5Text">Volle Kontrolle</small></button>
+      </div>
+      <p class="screenshot-disclaimer" data-i18n="screensDisclaimer">Hinweis: Die gezeigten Screenshots sind Designvisualisierungen und keine verifizierten Aufnahmen eines aktuellen Builds.</p>
+    </section>
+
+    <section class="section container showcase"><div class="showcase-panel reveal"><div class="showcase-copy"><span class="section-kicker" data-i18n="showcaseKicker">GUT SORTIERT</span><h2 data-i18n-html="showcaseTitle">Aus Chaos wird <span class="gradient-text">Struktur.</span></h2><p data-i18n="showcaseBody">Aus vielen Einzelbildern werden übersichtliche App-Kategorien. Deine Sammlung bleibt nachvollziehbar – auch wenn es mal richtig viele Screenshots sind.</p><div class="showcase-bullets"><span><svg class="ic"><use href="#i-check"/></svg><span data-i18n="showcasePoint1">Eigene Ordner je Kategorie</span></span><span><svg class="ic"><use href="#i-check"/></svg><span data-i18n="showcasePoint2">Ergebnisse vorab prüfen</span></span><span><svg class="ic"><use href="#i-check"/></svg><span data-i18n="showcasePoint3">Unklare Treffer im Blick</span></span></div></div><img src="assets/img/feature-blue.webp" loading="lazy" width="1024" height="500" alt="Schematische Darstellung von Screenshot Sorting Pro – Auswahl, Analyse, Ergebnisse und sortierte Ordner"/></div></section>
+
+    <section id="faq" class="section container faq-section" aria-labelledby="faqTitle"><div class="section-heading reveal"><span class="section-kicker">FAQ</span><h2 id="faqTitle" data-i18n-html="faqTitle">Noch Fragen? <span class="gradient-text">Hier sind Antworten.</span></h2></div><div class="faq-items">
+      <details><summary><span data-i18n="faq1Q">Wie erkennt die App meine Screenshots?</span><svg class="ic"><use href="#i-chevron"/></svg></summary><p data-i18n="faq1A">Die Erkennung nutzt unter anderem Farbprofile und typische Bildbereiche, um Screenshots bestimmten Apps zuzuordnen. Nicht jeder Treffer ist eindeutig; dafür gibt es die Kategorie „Unklar“.</p></details>
+      <details><summary><span data-i18n="faq2Q">Werden meine Bilder in eine Cloud geladen?</span><svg class="ic"><use href="#i-chevron"/></svg></summary><p data-i18n="faq2A">Die dargestellte Bildanalyse ist für die lokale Ausführung auf Android ausgelegt. Ob die veröffentlichte Version weitere Dienste verwendet, steht in der Datenschutzerklärung der jeweiligen App-Version.</p></details>
+      <details><summary><span data-i18n="faq3Q">Kann ich Kopieren statt Verschieben verwenden?</span><svg class="ic"><use href="#i-chevron"/></svg></summary><p data-i18n="faq3A">Ja, das ist als Dateiverarbeitungsoption vorgesehen. Für einen sicheren Einstieg empfiehlt sich der Kopiermodus, damit die Originaldateien erhalten bleiben.</p></details>
+      <details><summary><span data-i18n="faq4Q">Kann ich die App schon bei Google Play herunterladen?</span><svg class="ic"><use href="#i-chevron"/></svg></summary><p data-i18n="faq4A">Der Google-Play-Link wird auf dieser Seite eingeblendet, sobald er in der Konfiguration hinterlegt wurde. Bis dahin kannst du dich per E-Mail nach dem Veröffentlichungsstand erkundigen.</p></details>
+      <details><summary><span data-i18n="faq5Q">Funktioniert die Landingpage auf GitHub Pages?</span><svg class="ic"><use href="#i-chevron"/></svg></summary><p data-i18n="faq5A">Ja. Diese Website benötigt weder Server noch Build-Tools: Dateien hochladen, GitHub Pages aktivieren, fertig.</p></details>
+    </div></section>
+
+    <section class="bottom-section container"><div class="final-cta reveal"><div class="cta-glow"></div><img src="assets/img/app-icon.webp" width="112" height="112" loading="lazy" alt="Screenshot Sorting Pro Icon"/><div><span class="section-kicker" data-i18n="ctaKicker">BEREIT FÜR MEHR ORDNUNG?</span><h2 data-i18n-html="ctaTitle">Deine Screenshots verdienen <span class="gradient-text">ein Upgrade.</span></h2><p data-i18n="ctaBody">Entdecke Screenshot Sorting Pro – smarter sortieren statt endlos suchen.</p></div><a id="finalCTA" class="btn btn-primary btn-large" href="mailto:flondy.dev@gmail.com?subject=Screenshot%20Sorting%20Pro"><svg class="ic"><use href="#i-arrow-up-right"/></svg><span data-i18n="ctaContact">Verfügbarkeit anfragen</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="footer-brand" href="#top"><img src="assets/img/app-icon.webp" width="36" height="36" alt=""/><span>Screenshot Sorting <em>Pro</em><small data-i18n="footerSubtitle">Eine App von Flondy</small></span></a><div class="footer-links"><a href="impressum.html" data-i18n="footerLegal">Impressum</a><a href="datenschutz.html" data-i18n="footerPrivacy">Datenschutz</a><a href="mailto:flondy.dev@gmail.com" data-i18n="footerContact">Kontakt</a></div><p>© <span id="year">2026</span> Flondy · <span data-i18n="footerRights">Alle Rechte vorbehalten.</span></p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot-Vorschau" hidden>
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Schließen"><svg class="ic"><use href="#i-close"/></svg></button>
+    <button class="lightbox-move lightbox-prev" id="lightboxPrev" type="button" aria-label="Vorheriges Bild"><svg class="ic reverse"><use href="#i-arrow"/></svg></button>
+    <figure class="lightbox-figure"><img id="lightboxImage" alt=""/><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="lightbox-move lightbox-next" id="lightboxNext" type="button" aria-label="Nächstes Bild"><svg class="ic"><use href="#i-arrow"/></svg></button>
+  </div>
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
