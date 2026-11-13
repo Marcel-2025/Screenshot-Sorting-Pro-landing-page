@@ -3,7 +3,7 @@
  * Leere Strings bedeuten: Kein Store-/APK-Link vorhanden.
  */
 window.SSP_CONFIG = {
-  playStoreUrl: '',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=dev.flondy.screenshotsortingpro',
   apkDownloadUrl: '',
   contactEmail: 'flondy.dev@gmail.com'
 };
